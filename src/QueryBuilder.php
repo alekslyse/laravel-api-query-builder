@@ -422,4 +422,9 @@ class QueryBuilder
             'pageName' => $pageName,
         ]))->setQueryUri($this->uriParser->getQueryUri());
     }
+    
+    public function getQuery()
+    {
+        return $this->query;
+    }
 }
